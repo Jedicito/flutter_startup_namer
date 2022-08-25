@@ -106,9 +106,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final wordPair = WordPair.random();
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Generador de Nombres',
-      home: RandomWords()
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          titleTextStyle: TextStyle(
+            fontSize: 18,
+            color: Colors.deepOrange, ),
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+        ),
+      ),
+      home: const RandomWords()
     );
   }
 }

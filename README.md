@@ -1,6 +1,6 @@
 # startup_namer
 
-Tutorial Codelabs
+Tutorial Codelabs Flutter
 
 ## Getting Started
 
